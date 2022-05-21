@@ -1,0 +1,23 @@
+Results for the extraLargeArray
+insert 2.059927842 s
+append 6.028621 ms
+
+Results for the largeArray
+insert 26.549035 ms
+append 1.27404 ms
+
+Results for the mediumArray
+insert 1.297865 ms
+append 449.152 μs
+
+Results for the smallArray
+insert 629.854 μs
+append 465.845 μs
+
+Results for the extraLargeArray
+insert 221.018 μs
+append 352.742 μs
+
+The append function is faster by a huge margin. Even for the extraLargeArray, the difference is
+between two seconds and 6 miliseconds. This is because it takes more time (effort) to look through an array and then insert the value. 
+With an append the value is placed at the end of the array without having to search throught the array. 
